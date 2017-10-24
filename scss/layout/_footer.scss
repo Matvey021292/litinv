@@ -1,0 +1,211 @@
+.contact_info{
+  background: $colorbg;
+  .contact_info_row{
+    margin: 40px 0 50px 0;
+  }
+  .footer_title{
+    font-size: 34px;
+    font-weight: 900;
+    color: $color;
+
+  }
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+    line-height: 1.6;
+
+  }
+  p.footer_text{
+    font-size: 19px;
+    font-weight: 300;
+    span{
+      color: $color;
+      font-weight:900;
+      font-size: 16px;
+      display: block;
+    }
+  }
+  p.small_footer_text{
+    font-size: 12px;
+  }
+  .footer_info_text{
+    font-size: 12.25px;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #fff;
+
+
+  }
+  .line{
+    background: url("../img/linedark.png");
+    background-position: center bottom;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    padding: 0 30px;
+  }
+  .copy{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+
+}
+img[src="img/mastercard.svg"]{
+  max-width: 80px;
+}
+#register_form,
+#activate_form,
+#subscribe_form{
+  text-align: left;
+  max-width: 400px;
+
+  label{
+    width: 100%;
+    color: #474747 !important;
+    font-size: 13px;
+    font-weight: bold;
+    input{
+      background: transparent;
+      border: 0;
+      box-shadow:none;
+      margin-top: 10px;
+      border-bottom: 2px solid #1a1b1c;
+      color: #fff;
+      font-weight: 500;
+      font-size: 17px;
+
+
+    }
+
+  }
+
+}
+#register_form{
+  max-width: 100%;
+
+}
+#main-modal_come .modal-sm{
+  width: 40%;
+  min-width: 320px;
+  height: auto;
+
+}
+#main-modal_come .modal-content{
+  background-image: url("../img/BackFormRegister.png");
+  background-color: transparent;
+}
+
+#register_form label{
+  text-transform: uppercase;
+}
+#register_form{
+  max-width: 60%;
+  margin: auto;
+  min-width: 300px;
+}
+.form-container .invalid + .error{
+  color: #eb314f!important;
+  font-size: 10px;
+}
+#register_form label input{
+  border-bottom: 2px solid #303031;
+}
+
+#register_form .link{
+  display: none;
+}
+#register_form .checkbox-wrapper{
+  label{
+    display: inline;
+    font-size: 10px;
+    font-style: italic;
+    text-transform: none;
+    a{
+      font-size: 1em;
+      color: $color;
+    }
+  }
+}
+#register_form{
+  .send-form{
+    margin: 10px auto;
+  }
+}
+#register_form .age{
+  color:$color;
+}
+
+
+#register_form.form-container .invalid,
+#activate_form.form-container .invalid,
+#subscribe_form.form-container .invalid{
+  color: #eb314f ;
+  border-bottom: 2px solid #eb314f;
+  background-image: url(../img/error.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 7px 0;
+}
+#register_form.form-container .valid,
+#subscribe_form.form-container .valid{
+  color: #03ac76 !important;
+  border-bottom: 2px solid #03ac76;
+  background-image: url(../img/checked.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 7px 0;
+
+}
+.send-form{
+  width: 50%;
+  background: #ffcc00;
+  border-color: transparent;
+  transition: all 1s linear;
+  span{
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+.form_group--button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus, .btn-primary:hover{
+  background-color: transparent!important;
+  border: 2px solid $color ;
+  outline: none;
+}
+a.button{
+  transition: all 0.5s linear;
+}
+.button:hover{
+  background: $color;
+}
+.min_section_register .button_registry{
+  border:2px solid transparent;
+  text-decoration: none;
+}
+.min_section_register .button_registry:hover{
+  color: #fff;
+  border: 2px solid #fff;
+}
+.header_logo a.button_open,
+.header_logo a.button_come{
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+.header_logo a.button_open:hover,
+.header_logo a.button_come:hover{
+  background: transparent;
+  border: 2px solid $color;
+}
+
