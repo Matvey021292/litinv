@@ -21,11 +21,11 @@
 <body style="min-width: 320px" onload="init()">
 
         <header>
-            <div id="main-modal" class="modal fade "  tabindex="-1" role="dialog">
+            <div class="fixedBgModal"></div>
+<div id="main-modal" class="modal fade "  tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
-
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -74,7 +74,7 @@
                 <ul>
                     <li><a href="index.html">ГЛАВНАЯ</a></li>
                     <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
-                    <li><a href="#">АНАЛИЗ РЫНКА</a></li>
+                    <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
                     <li><a href="#">ОБУЧЕНИЕ</a></li>
                     <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
                     <li><a href="#">О НАС</a></li>
@@ -87,11 +87,12 @@
         </div>
     </div>
     <div class="row media_nav_table">
+        <div class="bgfixed"></div>
         <div class="col-sm-6 col-sm-offset-6 nav_block">
             <ul class="header_nav ">
                 <li><a href="index.html">ГЛАВНАЯ</a></li>
                 <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
-                <li><a href="#">АНАЛИЗ РЫНКА</a></li>
+                <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
                 <li><a href="#">ОБУЧЕНИЕ</a></li>
                 <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
                 <li><a href="#">О НАС</a></li>
@@ -734,7 +735,7 @@ viewBox="0 0 52.942 42.504"
     <div class="container">
         <div class="row contact_info_row">
 
-            <div class="col-sm-6">
+            <div class="col-sm-5 col-sm-offset-1 padding">
                 <h6 class="footer_title">Контактная <br>
                     информация</h6>
                 <p>Есть вопросы? <br>
@@ -749,15 +750,18 @@ viewBox="0 0 52.942 42.504"
                 <p class="footer_text"><span>Email: </span>support@midbahone.caom</p>
                 <p class="small_footer_text">Smartoption LTD, Avan District, Tumanyan 13/2-6, +37460465887</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4 col-sm-offset-1">
                 <h6 class="footer_title" style="margin-bottom: 17px">Контактная <br>
                     форма</h6>
                 <form class="form-container" id="subscribe_form"></form>
             </div>
         </div>
         <div class="row line">
-            <p class="footer_info_text">Финансовые операции, предлагаемые данным сайтом, могут обладать повышенным уровнем риска. Приобретая предлагаемые данным сайтом финансовые услуги и инструменты, вы можете понести серьезные финансовые потери или полностью утратить средства, находящиеся на вашем гарантийно-торговом счету. Пожалуйста, оцените все финансовые риски и посоветуйтесь с независимым финансовым консультантом перед началом торговли. MIDBAHONE не несет ответственности за любые прямые, косвенные и случайные убытки или любой другой ущерб, связанный с действиями
-                пользователя на данном сайте. Услуги предоставляет Explatinum LP.</p>
+            <div class="col-sm-10 col-sm-offset-1 padding">
+                <p class="footer_info_text">Финансовые операции, предлагаемые данным сайтом, могут обладать повышенным уровнем риска. Приобретая предлагаемые данным сайтом финансовые услуги и инструменты, вы можете понести серьезные финансовые потери или полностью утратить средства, находящиеся на вашем гарантийно-торговом счету. Пожалуйста, оцените все финансовые риски и посоветуйтесь с независимым финансовым консультантом перед началом торговли. MIDBAHONE не несет ответственности за любые прямые, косвенные и случайные убытки или любой другой ущерб, связанный с действиями
+                    пользователя на данном сайте. Услуги предоставляет Explatinum LP.</p>
+            </div>
+
 
         </div>
         <p class="copy">Copyright © Midbahone 2014-2017. Все права защищены</p>
@@ -780,25 +784,7 @@ viewBox="0 0 52.942 42.504"
 <script src="js/graph.js"></script>
 
 <script>
-//    var wind = $(window).width(),
-//        itemsT = $(".ul0"),
-//        itemsl = $(".ul1"),
-//        myWidth = itemsT.width();
-//
-//    var trXo = 0;
-//    var trXt = myWidth;
-//    var myTimer = setInterval (function(){
-//        trXo-=0.5;
-//        trXt-=0.5;
-//        itemsT.css("transform","translateX("+trXo+"px)");
-//        itemsl.css("transform","translateX("+trXt+"px)");
-//        if (itemsT.offset().left+itemsT.width()<0){
-//            trXo = myWidth;
-//        }
-//        if (itemsl.offset().left+itemsl.width()<0){
-//            trXt = myWidth;
-//        }
-//    }, 1);
+
 
 //    $(document).ready(function(){
 //        $('.place-card').css('display','none');
@@ -818,11 +804,39 @@ viewBox="0 0 52.942 42.504"
 //        })
 //
 //    });
+    $(document).ready(function () {
+        $('#toggle-btn').click(function(){
+            var widht = $('body').width();
+            var height = $('body').height();
+            $('body').toggleClass('overflow');
+            $('.fixedBgModal').toggleClass('display');
+            $('.header_nav_media').toggleClass('position');
+        });
+    })
 </script>
 
 
 
 
+        <script>
+            var wind = $(window).width(),
+                itemsT = $(".ul0"),
+                itemsl = $(".ul1"),
+                myWidth = itemsT.width();
 
+            var trXo = 0;
+            var trXt = myWidth;
+            var myTimer = setInterval (function(){
+                trXo-=0.5;
+                trXt-=0.5;
+                itemsT.css("transform","translateX("+trXo+"px)");
+                itemsl.css("transform","translateX("+trXt+"px)");
+                if (itemsT.offset().left+itemsT.width()<0){
+                    trXo = myWidth;
+                }
+                if (itemsl.offset().left+itemsl.width()<0){
+                    trXt = myWidth;
+                }
+            }, 1);        </script>
 </body>
 </html>

@@ -19,6 +19,25 @@
             <!--#insert file="html/-footer.html"-->
         </footer>
          <!--#insert file="html/-script.html"-->
+        <script>
+            var wind = $(window).width(),
+                itemsT = $(".ul0"),
+                itemsl = $(".ul1"),
+                myWidth = itemsT.width();
 
+            var trXo = 0;
+            var trXt = myWidth;
+            var myTimer = setInterval (function(){
+                trXo-=0.5;
+                trXt-=0.5;
+                itemsT.css("transform","translateX("+trXo+"px)");
+                itemsl.css("transform","translateX("+trXt+"px)");
+                if (itemsT.offset().left+itemsT.width()<0){
+                    trXo = myWidth;
+                }
+                if (itemsl.offset().left+itemsl.width()<0){
+                    trXt = myWidth;
+                }
+            }, 1);        </script>
 </body>
 </html>

@@ -80,8 +80,8 @@ gulp.task('html', function(){
 		.pipe(replace({
 			css: 'scss/css/style.css'
 		}))
-		.pipe(gulp.dest('build/'))
-		.pipe(connect.reload());
+		.pipe(gulp.dest('build/'));
+		// .pipe(connect.reload());
 });
 // gulp.task('server', function(){
 // 	connect.server({

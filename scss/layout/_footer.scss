@@ -46,7 +46,7 @@
     background-attachment: fixed;
     padding-bottom: 30px;
     background-repeat: no-repeat;
-    padding: 0 30px;
+    padding: 0 15px;
   }
   .copy{
     text-align: center;
@@ -97,8 +97,11 @@ img[src="img/mastercard.svg"]{
 
 }
 #main-modal_come .modal-content{
+  //background-color: #242526;
   background-image: url("../img/BackFormRegister.png");
   background-color: transparent;
+  //background-blend-mode: color;
+
 }
 
 #register_form label{
