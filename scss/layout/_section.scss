@@ -427,9 +427,11 @@ h6.title.section_title{
 .section_nav {
   background: $colorbg;
   .row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .wrapper_logo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     a{
       font-size: 16px;

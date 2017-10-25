@@ -19,9 +19,30 @@
 </head>
 
 <body style="min-width: 320px" onload="init()">
+<div class="container">
+    <div class="row">
+        <div class="header_nav_media">
+            <input type="checkbox" id="toggle"/>
+            <label for="toggle" id="toggle-btn"></label>
+            <div class="nav-icon"></div>
+            <nav data-state="close">
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
+                    <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
+                    <li><a href="training.html">ОБУЧЕНИЕ</a></li>
+                    <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li class="media_button_come"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a></li>
+                    <li class="media_button_open"><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></li>
 
-        <header>
-            <div class="fixedBgModal"></div>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
 <div id="main-modal" class="modal fade "  tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
@@ -57,34 +78,14 @@
         </div>
     </div>
 </div>
-
-
+<div class="wrapper_blur">
+        <header>
+            
 <div class="container-fluid ">
     <div class=" header_logo">
         <div class=""><h2 class="logo">midbahone<span>.</span>com</h2></div>
         <div class="  flex-button media_nav_table"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></div>
         <div class="border"></div>
-    </div>
-    <div class="row">
-        <div class="header_nav_media">
-            <input type="checkbox" id="toggle"/>
-            <label for="toggle" id="toggle-btn"></label>
-            <div class="nav-icon"></div>
-            <nav data-state="close">
-                <ul>
-                    <li><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
-                    <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
-                    <li><a href="#">ОБУЧЕНИЕ</a></li>
-                    <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
-                    <li><a href="#">О НАС</a></li>
-                    <li class="media_button_come"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a></li>
-                    <li class="media_button_open"><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></li>
-
-
-                </ul>
-            </nav>
-        </div>
     </div>
     <div class="row media_nav_table">
         <div class="bgfixed"></div>
@@ -93,7 +94,7 @@
                 <li><a href="index.html">ГЛАВНАЯ</a></li>
                 <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
                 <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
-                <li><a href="#">ОБУЧЕНИЕ</a></li>
+                <li><a href="training.html">ОБУЧЕНИЕ</a></li>
                 <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
                 <li><a href="#">О НАС</a></li>
             </ul>
@@ -106,7 +107,11 @@
 
     </div>
 </div>
-<div class="container">
+
+        </header>
+
+        <section class="page_section">
+            <div class="container">
     <div class="row margin_header">
         <div class="col-sm-10 col-sm-offset-1">
             <h1 class="title">Умные <br>
@@ -166,7 +171,7 @@
         </ul>
     </div>
 </div>
-        </header>
+        </section>
 
         <section >
             <div class="section_info_canter">
@@ -628,12 +633,11 @@ viewBox="0 0 52.942 42.504"
         </div>
     </div>
 </div>
+</div>
 
-
-
-
-
-<div class=" services_section">
+        </section>
+        <section>
+            <div class=" services_section">
     <div class="container">
         <div class="row">
             <img src="img/Bitcoin.png" alt="">
@@ -644,7 +648,9 @@ viewBox="0 0 52.942 42.504"
         </div>
     </div>
 </div>
-<article class="page-article offers" role="banner">
+        </section>
+        <section>
+            <article class="page-article offers" role="banner">
     <div active="0" class="offers-container ng-animate-enable">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -694,9 +700,9 @@ viewBox="0 0 52.942 42.504"
                                 </h2>
                             </header>
                             <div class="page-article-content">
-                               <p>Брокер Midbahone дарит опционы всем новым трейдерам! <br>
-                                Зачем? Чтобы вы получали удовольствие от торговли и прибыль на <br> Midbahone! Если вы ни разу не вносили депозит, пришло время это
-                                <br> сделать!</p>
+                                <p>Брокер Midbahone дарит опционы всем новым трейдерам! <br>
+                                    Зачем? Чтобы вы получали удовольствие от торговли и прибыль на <br> Midbahone! Если вы ни разу не вносили депозит, пришло время это
+                                    <br> сделать!</p>
                             </div>
                             <footer class="page-article-footer">
                                 <a class="button button_registry scrollto" href="#register_form">Только сегодня</a>
@@ -710,31 +716,36 @@ viewBox="0 0 52.942 42.504"
 
     </div>
 </article>
-
-</div>
-<div class="section_nav">
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.7221294896665!2d-2.799814591842291!3d56.33941896035866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4886579acaa27bf5%3A0x4adae049d49bfb78!2zMTQgQmVsbCBTdCwgU3QgQW5kcmV3cyBLWTE2IDlVWCwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1508496294482" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        <section>
+            <div class="section_nav">
     <div class="container">
         <div class="row">
-            <a href="/">Обучение</a>
-            <a href="/">FAQ</a>
-            <a href="/">Статьи</a>
-            <a href="/">Акции</a>
-            <a href="/">О нас</a>
-            <a href="/">Контакты</a>
-            <a class="media_flex_basis" href="/">Клиентское соглашение</a>
-            <a href="/">Партнерская программа</a>
+            <div class="col-sm-10 col-sm-offset-1 wrapper_logo">
+                <a href="/">Обучение</a>
+                <a href="/">FAQ</a>
+                <a href="/">Статьи</a>
+                <a href="/">Акции</a>
+                <a href="/">О нас</a>
+                <a href="/">Контакты</a>
+                <a class="media_flex_basis" href="/">Клиентское соглашение</a>
+                <a href="/">Партнерская программа</a>
+            </div>
+
         </div>
     </div>
 </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.7221294896665!2d-2.799814591842291!3d56.33941896035866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4886579acaa27bf5%3A0x4adae049d49bfb78!2zMTQgQmVsbCBTdCwgU3QgQW5kcmV3cyBLWTE2IDlVWCwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1508496294482" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </section>
-     
+
         <footer>
             
 <div class="contact_info">
     <div class="container">
         <div class="row contact_info_row">
-
             <div class="col-sm-5 col-sm-offset-1 padding">
                 <h6 class="footer_title">Контактная <br>
                     информация</h6>
@@ -761,14 +772,13 @@ viewBox="0 0 52.942 42.504"
                 <p class="footer_info_text">Финансовые операции, предлагаемые данным сайтом, могут обладать повышенным уровнем риска. Приобретая предлагаемые данным сайтом финансовые услуги и инструменты, вы можете понести серьезные финансовые потери или полностью утратить средства, находящиеся на вашем гарантийно-торговом счету. Пожалуйста, оцените все финансовые риски и посоветуйтесь с независимым финансовым консультантом перед началом торговли. MIDBAHONE не несет ответственности за любые прямые, косвенные и случайные убытки или любой другой ущерб, связанный с действиями
                     пользователя на данном сайте. Услуги предоставляет Explatinum LP.</p>
             </div>
-
-
         </div>
         <p class="copy">Copyright © Midbahone 2014-2017. Все права защищены</p>
     </div>
 
 </div>
         </footer>
+</div>
          
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -809,9 +819,27 @@ viewBox="0 0 52.942 42.504"
             var widht = $('body').width();
             var height = $('body').height();
             $('body').toggleClass('overflow');
-            $('.fixedBgModal').toggleClass('display');
+            $('.wrapper_blur').toggleClass('on');
             $('.header_nav_media').toggleClass('position');
         });
+        $('.button').click(function () {
+            $('.wrapper_blur').toggleClass('on');
+            $('.close').click(function () {
+                $('.wrapper_blur').removeClass('on');
+
+            });
+            $('#main-modal_come').click(function(){
+                $(document).click( function(event){
+                    if( $(event.target).closest(".modal-dialog").length )
+                        return;
+                    event.stopPropagation();
+                });
+                $('.wrapper_blur').removeClass('on');
+            });
+
+            $('.header_nav_media nav').toggleClass("of")
+        })
+
     })
 </script>
 

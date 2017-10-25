@@ -2,17 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <!--#insert file="html/-meta.html"-->
-
+    <link rel="stylesheet" href="css/vidgettab.css">
 </head>
 
 <body style="min-width: 320px" onload="init()">
-
-<header >
+<header>
     <!--#insert file="html/-header.html"-->
 </header>
-<section class="page_client_info page_section">
-    <!--#insert file="html/-pageClientInfo.html"-->
+<section class="page_analysis page_section">
+    <!--#insert file="html/-pageTraining.html"-->
 </section>
+
 <section>
     <!--#insert file="html/-footerlogo.html"-->
 </section>
@@ -26,5 +26,21 @@
 </footer>
 <!--#insert file="html/-script.html"-->
 
+<script>
+
+    var tabsFn = (function() {
+
+        function init() {
+            setHeight();
+        }
+
+        function setHeight() {
+            var $tabPane = $('.tab-pane'),
+                tabsHeight = $('.nav-tabs').height();
+        }
+
+        $(init);
+    })();
+</script>
 </body>
 </html>

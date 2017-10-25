@@ -38,9 +38,27 @@
             var widht = $('body').width();
             var height = $('body').height();
             $('body').toggleClass('overflow');
-            $('.fixedBgModal').toggleClass('display');
+            $('.wrapper_blur').toggleClass('on');
             $('.header_nav_media').toggleClass('position');
         });
+        $('.button').click(function () {
+            $('.wrapper_blur').toggleClass('on');
+            $('.close').click(function () {
+                $('.wrapper_blur').removeClass('on');
+
+            });
+            $('#main-modal_come').click(function(){
+                $(document).click( function(event){
+                    if( $(event.target).closest(".modal-dialog").length )
+                        return;
+                    event.stopPropagation();
+                });
+                $('.wrapper_blur').removeClass('on');
+            });
+
+            $('.header_nav_media nav').toggleClass("of")
+        })
+
     })
 </script>
 

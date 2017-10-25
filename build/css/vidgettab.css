@@ -1,0 +1,336 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.10.2017, 17:41:24
+    Author     : User
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+
+/*                              COMMON                              */
+
+
+.first-window.first-window-edu.accounts {
+    height: auto;
+    font-family: Roboto, sans-serif;
+}
+
+.first-window.first-window-edu.accounts .container-fluid{
+    max-width: 1360px;
+    padding: 0;
+}
+
+.div-main-first-edu {
+    /*margin-bottom: 100px;*/
+    margin-top: 100px;
+}
+.nav-tabs > li > a  {
+    border: none;
+    transition: all 1s linear;
+}
+.nav-justified{
+    display: flex;
+}
+.nav-justified>li{
+    width: 25%;
+    display: inline-block;
+}
+div .actives .nav-actives .actives_list--item .actives_list--link{
+    padding: 15px 0;
+    background-image: none;
+    background-color: transparent;
+    transition: all 1s linear;
+}
+.panel-default>.panel-heading{
+    background-image: none !important;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.left-pd {
+    padding-left: 80px;
+}
+
+.first-window-edu .col-md-10.col-md-offset-1 {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.first-window-edu .page-article {
+    background: none;
+}
+
+.first-window-edu .systems {
+    padding-bottom: 0;
+    padding-top: 125px;
+}
+
+.first-window-edu .systems .container {
+    width: 100%;
+    padding: 0;
+}
+
+.first-window-edu .systems .list-assets .item {
+    width: 20%;
+}
+
+.first-window-edu .systems .list-assets .item img {
+    max-width: 60%;
+}
+
+.first-window-edu .systems .list-assets .item:nth-child(1) img {
+    max-width: 75%;
+    padding-top: 15px;
+}
+
+.first-window-edu .systems .list-assets .item:nth-child(2) img {
+    max-width: 48%;
+    padding-top: 15px;
+}
+
+.first-window-edu .systems .list-assets .item:nth-child(3) img {
+    max-width: 40%;
+}
+
+.first-window-edu .systems .list-assets .item:nth-child(4) img {
+    max-width: 75%;
+}
+
+.first-window-edu .systems .list-assets .item:nth-child(5) img {
+    max-width: 64%;
+    padding-top: 10px;
+}
+
+
+
+
+/*                              TAB NAVIGATION                              */
+
+.nav-edu {
+    border: none;
+}
+.nav-edu-title {
+    color: #9d9d9d;
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    padding-top: 9px;
+    margin-bottom: 10px;
+}
+.nav-edu .nav_list--item .nav_list--link{
+    margin-left: 70px;
+    color: #fff;
+    position: relative;
+    font-weight: 800;
+    padding: 8px 15px;
+
+}
+.nav-edu .nav_list--item .nav_list--link:hover {
+    background: none;
+    color: #ffcc00;
+    border: none;
+}
+.nav-edu .nav_list--item.active .nav_list--link {
+    background:none;
+    border: none;
+    color: #ffcc00;
+}
+.nav-edu .nav_list--item.active .nav_list--link::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    top: 16px;
+    height: 5px;
+    width: 64px;
+    background-color: #ffcc00;
+}
+
+
+
+/*                              TAB CONTENT                                           */
+
+
+.tab-content .tab-pane-wrapper { color: #fff;}
+.tab-content .tab-pane-title {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 105px;
+    max-width: 1000px;}
+.tab-content .tab-pane-title-sm {font-weight: 100;}
+.tab-content .tab-pane-text {font-family: Roboto, sans-serif; font-weight: 300;}
+
+
+/*                                   "Что такое бинарные опционы"                                         */
+
+.benefit_tabs {margin-top: 70px;}
+.benefit_tabs .benefit_tab {
+    width: 95%;
+    min-width: 309px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 9px;
+    text-align: center;
+    padding: 18px 22px;
+
+}
+.benefit_tabs .benefit_tab .benefit_tab--icon {
+    width: 55px;
+    height: 50px;
+    margin: -43px auto 30px;
+}
+.benefit_tabs .benefit_tab .benefit_tab--title {
+    min-height: 60px;
+    font-size: 28px;
+    font-weight: 900;
+}
+.benefit_tabs .benefit_tab .line {
+    margin: 25px auto;
+}
+.benefit_tabs .benefit_tab .benefit_tab--desc { margin-bottom: 80px; min-height: 180px; font-size: 13px;}
+
+.benefit_tab--income {
+    background: url("../images/benefit-tab-bg_1.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.benefit_tab--risk {
+    background: url("../images/benefit-tab-bg_2.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.benefit_tab--simple {
+    background: url("../images/benefit-tab-bg_3.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/*                                   "Как торговать"                                         */
+.steps {margin-top: 90px;}
+.step { margin: 30px 0}
+.steps .steps_title {font-weight: 900;margin-bottom: 10px;}
+.steps .steps_title_sm {font-weight: 300;}
+.steps .steps_title_sm > span {color: #ffcc00}
+
+
+/*                                   "Виды активов"                                         */
+.actives {margin-top: 50px;}
+
+.actives .nav-actives {
+    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: #1a1b1c;
+    margin-bottom: 3px;
+}
+.actives .nav-actives .actives_list--item .actives_list--link{
+    color: #fff;
+    position: relative;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 0;
+
+}
+.actives .nav-actives .actives_list--item .actives_list--link:hover {
+    background: #ffcc00;
+    color: #fff;
+    border: none;
+}
+.actives .nav-actives .actives_list--item.active {
+    background: #ffcc00;
+}
+.actives .nav-actives .actives_list--item.active .actives_list--link{
+    background: #ffcc00;
+}
+
+.actives .panel {
+    border-color: rgba(255, 255, 255, .2);
+    border-radius: 0;
+    background: none;
+    color: #e0e1e1;
+}
+.actives .panel + .panel {
+    margin-top: 3px;
+}
+.actives .panel .panel-heading {
+    background-color: #1a1b1c;
+    text-transform: uppercase;
+}
+.actives .panel .panel-heading:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.actives .panel .panel-icon {
+     float: left;
+ }
+.actives .panel .panel-title {color: #e0e1e1; float: left; margin-left: 10px;}
+.actives .panel .panel-title a {height: 34px; line-height: 34px;}
+.actives .panel .panel-arrow {
+    color: #fff;
+    float: right;
+}
+.actives .panel .panel-arrow span {
+    font-size: 18px;
+    line-height: 34px;
+}
+.actives .panel .panel-collapse .panel-body {
+    font-size: 13px;
+    font-weight: 300;
+    background-color: #1a1b1c;
+    border: none;
+}
+.actives .panel .panel-collapse .panel-body .desc {
+    margin-bottom: 10px;
+}
+.actives .panel .panel-collapse .panel-body .info b {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+
+/*                                   "Словарь"                                         */
+.terms {margin-top: 50px;}
+.terms .panel {
+    border-color: rgba(255, 255, 255, .2);
+    border-radius: 0;
+    background: none;
+    color: #e0e1e1;
+}
+.terms .panel + .panel {
+    margin-top: 3px;
+}
+.terms .panel .panel-heading {
+    background-color: #1a1b1c;
+    text-transform: uppercase;
+}
+.terms .panel .panel-title {color: #e0e1e1;  }
+.terms .panel .panel-collapse .panel-body {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 20px 18px;
+    background-color: #1a1b1c;
+    border: none;
+}
+
+
+/*                                   "Биржевые часы"                                         */
+
+
+/*                                   "Вебинары"                                         */
+
+
+/*                                   "Видеоуроки"                                         */
+
+
+/*                                   "Блог"                                         */
+
+
+
+
+
+
