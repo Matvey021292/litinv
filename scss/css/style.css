@@ -1294,7 +1294,7 @@ a.button_registry {
   width: 250px;
   border-radius: 50px; }
 
-a {
+.header_nav a {
   font-size: 13px;
   font-weight: bold;
   color: #fff;
@@ -1305,7 +1305,7 @@ a {
   background-position: center 30px;
   padding-bottom: 8px;
   transition: color 1s linear, background-position 0.7s linear; }
-  a:hover {
+  .header_nav a:hover {
     color: #ffcc00;
     background-position: center bottom;
     text-decoration: none; }
@@ -1995,9 +1995,71 @@ form.form-container input[type="radio"] label {
   text-align: center;
   display: inline-block; }
 
-.wrapper_blur img {
-  width: 98px;
-  height: 100%; }
+.lightbox_header {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  right: 10px;
+  top: 30%; }
+  .lightbox_header a {
+    background-image: none;
+    display: flex;
+    align-items: center; }
+    .lightbox_header a:hover {
+      background-image: none; }
+  .lightbox_header img {
+    max-width: 100px;
+    height: auto;
+    opacity: 0.3;
+    margin: 3px; }
+  .lightbox_header .litebox_items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+
+.ekko-lightbox button.close {
+  background: none; }
+
+.ekko-lightbox .modal-content {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  border: none; }
+
+.ekko-lightbox .ekko-lightbox-nav-overlay {
+  position: absolute;
+  height: min-content;
+  bottom: -35px;
+  top: auto; }
+  .ekko-lightbox .ekko-lightbox-nav-overlay a {
+    opacity: 1;
+    text-decoration: none;
+    display: inline-block; }
+    .ekko-lightbox .ekko-lightbox-nav-overlay a span {
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      font-size: 0px;
+      display: inline-block;
+      margin: 10px;
+      border-radius: 50%;
+      color: #000;
+      position: relative; }
+      .ekko-lightbox .ekko-lightbox-nav-overlay a span:after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        background: #ffcc00;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px; }
+    .ekko-lightbox .ekko-lightbox-nav-overlay a:first-child {
+      text-align: right; }
+    .ekko-lightbox .ekko-lightbox-nav-overlay a:last-child span {
+      text-align: left; }
 
 .title.section_title {
   font-size: 80px;
