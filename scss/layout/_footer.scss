@@ -64,12 +64,14 @@ img[src="img/mastercard.svg"]{
 #subscribe_form{
   text-align: left;
   max-width: 400px;
+  margin: auto;
 
   label{
     width: 100%;
     color: #474747 !important;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bold;
+
     input{
       background: transparent;
       border: 0;
@@ -86,21 +88,18 @@ img[src="img/mastercard.svg"]{
   }
 
 }
-#register_form{
-  max-width: 100%;
-
-}
+#main-modal .modal-sm,
 #main-modal_come .modal-sm{
   width: 40%;
   min-width: 320px;
   height: auto;
 
 }
+#main-modal .modal-content,
 #main-modal_come .modal-content{
-  //background-color: #242526;
+  background-color: rgba(255,255,255,0.03);
   background-image: url("../img/BackFormRegister.png");
-  background-color: transparent;
-  //background-blend-mode: color;
+
 
 }
 
@@ -108,22 +107,26 @@ img[src="img/mastercard.svg"]{
   text-transform: uppercase;
 }
 #register_form{
-  max-width: 60%;
   margin: auto;
   min-width: 300px;
 }
 .form-container .invalid + .error{
   color: #eb314f!important;
-  font-size: 10px;
+  font-size: 10px !important;
+  text-transform: lowercase;
 }
 #register_form label input{
   border-bottom: 2px solid #303031;
+  font-weight: 300;
 }
 
 #register_form .link{
   display: none;
 }
 #register_form .checkbox-wrapper{
+  &:first-child{
+    margin-top: 40px;
+  }
   label{
     display: inline;
     font-size: 10px;
@@ -131,18 +134,17 @@ img[src="img/mastercard.svg"]{
     text-transform: none;
     a{
       font-size: 1em;
-      color: $color;
+
     }
   }
 }
 #register_form{
   .send-form{
     margin: 10px auto;
+
   }
 }
-#register_form .age{
-  color:$color;
-}
+
 
 
 #register_form.form-container .invalid,
@@ -163,6 +165,7 @@ img[src="img/mastercard.svg"]{
   background-repeat: no-repeat;
   background-position: right;
   padding: 7px 0;
+  font-weight: 300;
 
 }
 .send-form{

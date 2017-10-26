@@ -5,10 +5,16 @@
 
 </head>
 
-<body style="min-width: 320px" onload="init()">
+<div style="min-width: 320px" onload="init()">
+
+
+    <!--#insert file="html/-modal.html"-->
+
+
 <header>
     <!--#insert file="html/-header.html"-->
 </header>
+
 <section class="page_analysis page_section">
     <!--#insert file="html/-pageAnalysisIndex.html"-->
 </section>
@@ -20,27 +26,14 @@
 <section>
     <!--#insert file="html/-footerNavMain.html"-->
 </section>
-
+<section>
+    <!--#insert file="html/-map.html"-->
+</section>
 <footer>
     <!--#insert file="html/-footer.html"-->
 </footer>
 <!--#insert file="html/-script.html"-->
 
-<script>
-
-    var tabsFn = (function() {
-
-        function init() {
-            setHeight();
-        }
-
-        function setHeight() {
-            var $tabPane = $('.tab-pane'),
-                tabsHeight = $('.nav-tabs').height();
-        }
-
-        $(init);
-    })();
-</script>
+</div>
 </body>
 </html>

@@ -425,7 +425,8 @@ h6.title.section_title{
   background-color: $color;
 }
 .section_nav {
-  background: $colorbg;
+  background: $color;
+  background: $color;
   .row{
     .wrapper_logo{
       display: flex;
@@ -436,10 +437,10 @@ h6.title.section_title{
     a{
       font-size: 16px;
       font-weight: 500;
-      color: #fff;
       padding: 30px 0;
       background: none;
       color: inherit;
+      color: #000;
     }
   }
 }

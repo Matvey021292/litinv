@@ -17,6 +17,42 @@
   }
 
 }
+
+@media(max-width: 992px){
+
+  //tabs_nav_main
+
+
+  .page_analysis .tabs_content,
+  .page_analysis .tabs_nav_panel{
+    width: 80%;
+    margin: auto;
+    float: none;
+  }
+  .page_analysis .nav-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .page_analysis .title_tab{
+    flex: 1 1 100%;
+
+  }
+  .page_analysis .tabs-left{
+    margin-top: 1.5em;
+
+  }
+  .tabs_content .tab-content_block{
+    margin-bottom: 40px;
+  }
+  .page_analysis .title.section_title{
+    text-align: left;
+    font-size: 80px;
+  }
+}
+
+
+
 @media(max-width: 851px){
   .modal.fade .modal-dialog{
     max-width: 400px;
@@ -49,6 +85,7 @@
     }
 
   }
+
   .title.section_title{
     text-align: center;
     background-position: center bottom;
@@ -73,6 +110,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #000;
   }
+  .page_analysis .title.section_title,
   .title.section_title{
     br{
       display: none;
@@ -85,6 +123,11 @@
       text-align: center;
     }
   }
+  .float_left{
+    float: none;
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 
@@ -95,6 +138,15 @@
     justify-content: center;
     border-bottom: 2px solid rgba(51, 51, 51, 0.21);
 
+  }
+  .header_nav_media{
+    display: flex;
+    justify-content: center;
+  }
+  #main-modal .modal-sm, #main-modal_come .modal-sm{
+    background: #000;
+    width: 100%;
+    max-width: 100%;
   }
 
     #navigate-table thead th{
@@ -165,11 +217,22 @@
     display: none;
   }
 
+  //tabs_nav_main
+
+
 }
 @media(max-width: 767px) {
   .header_nav_media {
-    display: block;
+    display: flex;
   }
+  section h5.news_title{
+    font-size: 40px !important;
+  }
+  .page_analysis .tab-content .data_news_section{
+    letter-spacing: 3px;
+  }
+
+
 
 }
 @media(max-width: 620px) {
@@ -279,6 +342,7 @@
   .vidget__content {
     overflow: hidden;
   }
+  .page_analysis .title.section_title,
   .title{
     font-size: 70px;
   }
@@ -288,6 +352,7 @@
   .section_Just h5.title.section_title{
     font-size: 30px;
   }
+  .page_analysis .title.section_title,
   .title.section_title{
     font-size: 50px;
   }
@@ -339,6 +404,7 @@
   header .header_logo{
     justify-content: flex-start;
   }
+  .page_analysis .title.section_title,
   .title{
     font-size: 45px;
   }
@@ -373,5 +439,23 @@
   }
   .vidget__graph-buttons .btn.btn__green, .vidget__graph-buttons .btn.btn__red{
     margin: auto;
+  }
+
+
+  .page_analysis .tab-content .data_news_section{
+    letter-spacing: 1px;
+  }
+  .page_analysis .title.section_title{
+    font-size: 30px;
+    background-position:left bottom;
+  }
+  section h5.news_title{
+    font-size: 30px !important;
+  }
+  .float_left{
+    min-width: 100%;
+  }
+  .section_nav .row .wrapper_logo a{
+  flex: 1 1 25%;
   }
 }
