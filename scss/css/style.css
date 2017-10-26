@@ -1995,6 +1995,10 @@ form.form-container input[type="radio"] label {
   text-align: center;
   display: inline-block; }
 
+.wrapper_blur img {
+  width: 98px;
+  height: 100%; }
+
 .title.section_title {
   font-size: 80px;
   margin-top: 0;

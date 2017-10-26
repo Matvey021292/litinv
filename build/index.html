@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="css/form.css">
    <link rel="stylesheet" type="text/css" href="css/style.css" />
    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
 </head>
 
@@ -80,7 +81,19 @@
     </div>
 </div>
 <div class="wrapper_blur">
+            <div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row">
+            <a href="img/certificate-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="img/certificate-1.jpg">
+            </a>
+            <a href="img/certificate-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="img/certificate-2.jpg" class="img-fluid">
+            </a>
 
+        </div>
+    </div>
+</div>
         <header>
             
 <div class="container-fluid ">
@@ -792,7 +805,14 @@ viewBox="0 0 52.942 42.504"
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
 <script src="js/form.js"></script>
 <!--<script src="js/script.min.js"></script>-->
 <script src="js/tweenlite.js"></script>
