@@ -25,7 +25,7 @@
 <section>
     <!--#insert file="html/-footerNavMain.html"-->
 </section>
-    <section>
+    <section class="map_container">
         <!--#insert file="html/-map.html"-->
     </section>
 <footer>
@@ -33,21 +33,6 @@
 </footer>
 <!--#insert file="html/-script.html"-->
 </div>
-<script>
 
-    var tabsFn = (function() {
-
-        function init() {
-            setHeight();
-        }
-
-        function setHeight() {
-            var $tabPane = $('.tab-pane'),
-                tabsHeight = $('.nav-tabs').height();
-        }
-
-        $(init);
-    })();
-</script>
 </body>
 </html>

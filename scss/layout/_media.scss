@@ -1,3 +1,35 @@
+@media(min-width:1400px ){
+  body{
+    background-size:auto;
+  }
+  .col-sm-10{
+    padding: 0;
+  }
+  .page_analysis{
+    .container-fluid{
+      max-width: 1400px;
+    }
+  }
+
+}
+@media(max-width: 1400px){
+  a.button_registry{
+    width: 200px;
+    padding: 17px;
+  }
+  .page-article-title .cost-title{
+    font-size: 120px;
+  }
+  .title{
+    font-size: 85px;
+  }
+  .title.section_title{
+    font-size: 75px;
+  }
+  section h5.news_title{
+    font-size: 45px !important;
+  }
+}
 @media(max-width: 1200px){
   .nav_block{
     margin-left: 0;
@@ -39,7 +71,7 @@
 
   }
   .page_analysis .tabs-left{
-    margin-top: 1.5em;
+    margin-top: 0.5em;
 
   }
   .tabs_content .tab-content_block{
@@ -49,11 +81,23 @@
     text-align: left;
     font-size: 80px;
   }
+  .tabs-left .title.section_title{
+    font-size: 30px;
+    text-align: center;
+    background-position: center bottom;
+  }
 }
 
 
 
 @media(max-width: 851px){
+  .min_section_register h4{
+    margin-top: 50px;
+  }
+  .services_section .row{
+    max-height: 100%;
+    padding: 20px 0;
+  }
   .modal.fade .modal-dialog{
     max-width: 400px;
     margin: auto;
@@ -117,10 +161,23 @@
     }
   }
   .section_nav .row .wrapper_logo{
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    overflow-x: scroll;
     a{
       flex: 1 1 auto;
       text-align: center;
+      min-width: 200px;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+      background-color: rgba(255, 255, 255, .5);
     }
   }
   .float_left{
@@ -132,6 +189,25 @@
 
 
 @media(max-width: 767px){
+  .page_section{
+    h1.title{
+      margin-top: 30px;
+    }
+  }
+  .lightbox_header{
+    top: 15%;
+    left: 0;
+
+    .litebox_items{
+      flex-wrap: nowrap;
+      flex-direction: row;
+
+
+    }
+    img{
+      width: 50px;
+    }
+  }
 
   header .header_logo{
     flex-wrap: wrap;
@@ -203,10 +279,14 @@
   .section_tryIt p{
     text-align: center;
   }
-  .header-text,
+
   .title{
     text-align: center;
     margin: auto;
+    display: block;
+  }
+  .header-text{
+    text-align: center;
     display: block;
   }
   a.button_registry{
@@ -328,7 +408,6 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
   .contact_info .form_group--button {
     flex-wrap: wrap;
@@ -398,6 +477,23 @@
     margin: 0;
 
   }
+ div #navigate-table{
+    max-width: 152px  ;
+  }
+  .table-container table.table td:first-child, .table-container table.table th:first-child{
+    max-width: 150px ;
+  }
+
+      #navigate-table .controls .arrow{
+        padding: 0;
+
+    }
+  table.table thead p{
+    font-size: 18px;
+  }
+  #navigate-table thead th{
+    padding-bottom: 58px !important;
+  }
 
 }
 @media(max-width: 440px){
@@ -425,7 +521,7 @@
   }
   .section_nav .row a{
     flex: 1 1 30%;
-    padding: 15px;
+    padding: 8px 0;
 
   }
   .section_nav .row a.media_flex_basis{
@@ -457,5 +553,34 @@
   }
   .section_nav .row .wrapper_logo a{
   flex: 1 1 25%;
+  }
+  .sale_section .title_sale_section{
+    font-size: 30px;
+  }
+  .margin_header{
+    margin: 80px 0;
+  }
+  .excellence_section .title.section_title, .section_tryIt .title.section_title{
+    margin-top: 0px;
+
+  }.page_section,
+  .section_info_canter,
+  .section_Just,
+  .excellence_section{
+    padding-top: 10px;
+  }
+  .page_analysis .margin_header,
+  .page_type .margin_header{
+    margin: 50px 0;
+    margin-bottom: 0px;
+  }
+  div .tab-content p{
+    text-align: left;
+  }
+  .tabs-left .title.section_title{
+    background-position:center bottom;
+  }
+  .tabs-left .flex-container{
+    margin-bottom: 10px;
   }
 }

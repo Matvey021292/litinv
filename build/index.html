@@ -33,19 +33,23 @@
                     <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
                     <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
                     <li><a href="training.html">ОБУЧЕНИЕ</a></li>
-                    <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
-                    <li><a href="#">О НАС</a></li>
+                    <li><a href="sale.html">БОНУСЫ И АКЦИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
                     <li class="media_button_come"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a></li>
                     <li class="media_button_open"><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></li>
-
-
                 </ul>
             </nav>
         </div>
     </div>
 </div>
 
-<div id="main-modal" class="modal fade "  tabindex="-1" role="dialog">
+
+
+
+
+
+
+<div id="main-modal" class="modal fade "   tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -56,12 +60,39 @@
             <div class="modal-body">
                 <div class="login-box">
                     <h2>Вход</h2>
-                    <form class="form-container" id="activate_form"></form>
+                    <form class="form_enter" id="form_enter_modal">
+                        <div class="form_group--email"><label>Email<input type="email" data-validation-type="email" name="email" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <div class="form_group--Password"><label>Password<input type="password" data-validation-type="password" name="password" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <a href="#main-modal_password" role="button" class="password_recovery"  data-toggle="modal"  >Забыли пароль?</a>
+                        <div class="form_group--button"> <button class="send-form btn btn-primary " type="submit"><span class="button--inner">Вход</span> </button><span class="link">midbahone.com</span><button type="button" class="btn btn-default close-form" data-dismiss="modal" style="display: none;"> Назад</button> </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div id="main-modal_password" class="modal  modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#main-modal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login-box">
+                    <h2>Забыли пароль?</h2>
+                    <form class="form_enter" id="password_recovery">
+                        <div class="form_group--email"><label>Email<input type="email" data-validation-type="email" name="email" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <div class="form_group--button"> <button class="send-form btn btn-primary " type="submit"><span class="button--inner">Вход</span> </button><span class="link">midbahone.com</span><button type="button" class="btn btn-default close-form" data-dismiss="modal" style="display: none;"> Назад</button> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="main-modal_come" class="modal fade "  tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
@@ -81,19 +112,19 @@
     </div>
 </div>
 <div class="wrapper_blur">
+
             <div class="row justify-content-center lightbox_header">
     <div class="col-md-12">
         <div class="row litebox_items">
-            <a href="img/certificate-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="lightbox_item" data-max-width="400">
-                <img src="img/certificate-2.jpg" class="img-fluid">
+            <a href="img/certificate-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="lightbox_item" data-max-height="500">
+                <img src="img/certificate-2.jpg" class="img-fluid lightbox_img">
             </a>
-            <a href="img/certificate-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="lightbox_item" data-max-width="400">
-                <img src="img/certificate-1.jpg">
+            <a href="img/certificate-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="lightbox_item" data-max-height="500">
+                <img src="img/certificate-1.jpg " class="lightbox_img">
             </a>
-            <a href="img/certificate-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="lightbox_item" data-max-width="400">
-                <img src="img/certificate-2.jpg" class="img-fluid">
+            <a href="img/certificate-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="lightbox_item" data-max-height="500">
+                <img src="img/certificate-2.jpg" class="img-fluid lightbox_img">
             </a>
-
         </div>
     </div>
 
@@ -114,8 +145,8 @@
                 <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
                 <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
                 <li><a href="training.html">ОБУЧЕНИЕ</a></li>
-                <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
-                <li><a href="#">О НАС</a></li>
+                <li><a href="sale.html">БОНУСЫ И АКЦИИ</a></li>
+                <li><a href="#subscribe_form">КОНТАКТЫ</a></li>
             </ul>
             <ul class="languagepicker">
                 <a href="#nl"><li><img src="img/russia.png"/></li></a>
@@ -132,13 +163,14 @@
         <section class="page_section">
             <div class="container">
     <div class="row margin_header">
-        <div class="col-sm-10 col-sm-offset-1">
-            <h1 class="title">Умные <br>
+        <div class="col-md-6 col-sm-offset-1">
+            <h1 class="title">Умные
                 Инвестиции</h1>
-            <p class="header-text">Зарегистрируйтесь и получите <span class="text-nowrap">50 000 руб.</span> на демо-счет. <br> Совершенствуйте  навыки торговли с Midbahone —
-                <br>
+
+            <p class="header-text">Зарегистрируйтесь и получите <span class="text-nowrap">50 000 руб.</span> на демо-счет. Совершенствуйте  навыки торговли с Midbahone —
+
                 лидером  рынка бинарных опционов.</p>
-            <a href="#register_form" class="button button_registry scrollto">РЕГИСТРАЦИЯ</a>
+            <a data-toggle="modal" data-target="#main-modal_come" class="button button_registry scrollto">РЕГИСТРАЦИЯ</a>
         </div>
     </div>
 </div>
@@ -190,6 +222,7 @@
         </ul>
     </div>
 </div>
+
         </section>
 
         <section >
@@ -197,8 +230,13 @@
     <div class="container ">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-                <h2 class="title section_title">Ваш <br>
-                    <span class="media_lower">И</span>нфоцентр</h2>
+                <div class="row">
+                    <div class="col-ms-6">
+                        <h2 class="title section_title">Ваш
+                            Инфоцентр</h2>
+                    </div>
+                </div>
+
 
             <div class="flex-container">
                 <div class=" list_block_left">
@@ -227,24 +265,24 @@ viewBox="0 0 52.942 42.504"
 </svg>
 
                     </div>
-                    <h6 class="title section_title">Финансовые <br>
+                    <h6 class="title section_title">Финансовые
                         новости</h6>
                     <p class="info_text">
-                        <span>Tariffs on Solar Panels Would Kill Jobs: View </span><br>
-                        13 October 2017 — <br>
-                        Bloomberg <br>
+                        <span>Tariffs on Solar Panels Would Kill Jobs: View </span>
+                        <span>13 October 2017 —</span>
+                        <span>Bloomberg</span>
                     </p>
 
                     <p class="info_text">
-                        <span>Bloomberg View Radio: Weekend Edition</span> <br>
-                        9 October 2017 — <br>
-                        Bloomber <br>
+                        <span>Bloomberg View Radio: Weekend Edition</span>
+                       <span>9 October 2017 —</span>
+                        <span>Bloomber</span>
                     </p>
 
                     <p class="info_text">
-                        <span>Russia's Challenge to NATO at Sea: View </span><br>
-                        6 October 2017 — <br>
-                        Bloomberg <br>
+                        <span>Russia's Challenge to NATO at Sea: View </span>
+                        <span>6 October 2017 —</span>
+                       <span>Bloomberg</span>
                     </p>
                     <a href="/" class="link">midbahone.com</a>
                 </div>
@@ -301,7 +339,7 @@ viewBox="0 0 52.942 42.504"
 
                     </div>
 
-                    <h6 class="title section_title">Лучшие <br>
+                    <h6 class="title section_title">Лучшие
                         сделки</h6>
                     <table>
                         <tr>
@@ -378,7 +416,7 @@ viewBox="0 0 52.942 42.504"
 
 
                     </div>
-                    <h6 class="title section_title">Популярные <br>
+                    <h6 class="title section_title">Популярные
                         тенденции</h6>
                     <table>
                         <tr>
@@ -460,9 +498,12 @@ viewBox="0 0 52.942 42.504"
 <div class="container list-section">
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2 class="title section_title">Просто и удобно</h2>
+                </div>
+            </div>
 
-            <h2 class="title section_title">Просто <br>
-                и удобно</h2>
             <div class="col_top">
                 <div>
                     <h5 class="title section_title">
@@ -502,17 +543,21 @@ viewBox="0 0 52.942 42.504"
 <div class="container ">
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-            <h3 class="title section_title">
-                Преимущества <br>
-                <span class="media_lower">П</span>латформы
-            </h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="title section_title">
+                        Преимущества Платформы
+                    </h3>
+                </div>
+            </div>
+
             <div class="row flex-section">
 
                     <div class="list_type">
                         <div class="logo logo_calc">
                         </div>
                         <h6>
-                            МИНИМАЛЬНЫЙ СЧЕТ <br>
+                            МИНИМАЛЬНЫЙ СЧЕТ
                             ОТ $10
                         </h6>
                         <p>Вам не нужно копить на стартовый капитал. Начните зарабатывать без крупных вложений.</p>
@@ -524,7 +569,7 @@ viewBox="0 0 52.942 42.504"
 
                         </div>
                         <h6>
-                            СТОИМОСТЬ ОПЦИОНОВ <br>
+                            СТОИМОСТЬ ОПЦИОНОВ
                             ОТ $1
                         </h6>
                         <p>Минимальный размер сделки не позволит потерять крупную сумму, пока вы учитесь трейдингу.</p>
@@ -535,7 +580,7 @@ viewBox="0 0 52.942 42.504"
 
                         </div>
                         <h6>
-                            УНИКАЛЬНЫЙ РЕЖИМ <br> ТРЕЙДИНГА «NON-STOP»
+                            УНИКАЛЬНЫЙ РЕЖИМ  ТРЕЙДИНГА «NON-STOP»
                         </h6>
                         <p>Время — деньги. Не ждите окончания сделки: открывайте несколько позиций одновременно и продолжайте торги.</p>
 
@@ -545,7 +590,7 @@ viewBox="0 0 52.942 42.504"
 
                         </div>
                         <h6>
-                            РАБОТА <br>
+                            РАБОТА
                             В ВЫХОДНЫЕ ДНИ
                         </h6>
                         <p>Не лишайте себя заработка в выходные. Торгуйте ежедневно и получайте больше прибыли.</p>
@@ -565,8 +610,13 @@ viewBox="0 0 52.942 42.504"
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-                <h3 class="title section_title">Попробуйте <br>
-                    прямо сейчас</h3>
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3 class="title section_title">Попробуйте
+                            прямо сейчас</h3>
+                    </div>
+                </div>
+
                 <p>Определите, куда пойдет график: вверх или вниз?</p>
             </div>
         </div>
@@ -646,9 +696,12 @@ viewBox="0 0 52.942 42.504"
 <div style="background-image:url('img/sectionBg3_1.jpg') " class="min_section_register">
     <div class="container">
         <div class="row">
-            <h4>Торгуй по контракту <br>
-                с midbahone.com</h4>
-            <a href="#register_form" class="button button_registry scrollto" >РЕГИСТРАЦИЯ</a>
+            <div class="col-md-4 col-md-offset-4">
+                <h4>Торгуй по контракту
+                    с midbahone.com</h4>
+                <a href="#" class="button button_registry scrollto"  data-toggle="modal" data-target="#main-modal_come">РЕГИСТРАЦИЯ</a>
+            </div>
+
         </div>
     </div>
 </div>
@@ -670,7 +723,7 @@ viewBox="0 0 52.942 42.504"
 </div>
         </section>
 
-        <section>
+        <section >
             <article class="page-article offers" role="banner">
     <div active="0" class="offers-container ng-animate-enable">
 
@@ -703,7 +756,7 @@ viewBox="0 0 52.942 42.504"
                                     <br> сделать!</p>
                             </div>
                             <footer class="page-article-footer">
-                                <a class="button button_registry scrollto" href="#register_form" >Только сегодня</a>
+                                <a class="button button_registry " href="#"  data-toggle="modal" data-target="#main-modal_come" >Только сегодня</a>
                             </footer>
                         </div>
                     </div>
@@ -726,7 +779,7 @@ viewBox="0 0 52.942 42.504"
                                     <br> сделать!</p>
                             </div>
                             <footer class="page-article-footer">
-                                <a class="button button_registry scrollto" href="#register_form">Только сегодня</a>
+                                <a class="button button_registry" data-toggle="modal" data-target="#main-modal_come">Только сегодня</a>
                             </footer>
                         </div>
                     </div>
@@ -739,7 +792,7 @@ viewBox="0 0 52.942 42.504"
 </article>
         </section>
 
-        <section>
+        <section class="map_container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.7221294896665!2d-2.799814591842291!3d56.33941896035866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4886579acaa27bf5%3A0x4adae049d49bfb78!2zMTQgQmVsbCBTdCwgU3QgQW5kcmV3cyBLWTE2IDlVWCwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1508496294482" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
 
@@ -752,8 +805,8 @@ viewBox="0 0 52.942 42.504"
                 <a href="indexType.html">ТИПЫ СЧЕТОВ</a>
                 <a href="analysisIndex.html">АНАЛИЗ РЫНКА</a>
                 <a href="training.html">ОБУЧЕНИЕ</a>
-                <a href="#">БОНУСЫ И АКЦИИ</a>
-                <a href="#">О НАС</a>
+                <a href="sale.html">БОНУСЫ И АКЦИИ</a>
+                <a href="clientInfo.html">Клиентское соглашение</a>
             </div>
 
         </div>
@@ -768,8 +821,13 @@ viewBox="0 0 52.942 42.504"
     <div class="container">
         <div class="row contact_info_row">
             <div class="col-sm-5 col-sm-offset-1 padding">
-                <h6 class="footer_title">Контактная <br>
-                    информация</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="footer_title">Контактная
+                            информация</h6>
+                    </div>
+                </div>
+
                 <p>Есть вопросы? <br>
                     Нужна помощь в открытии вашего счета? <br>
                     Наша служба поддержки клиентов заботится обо всем. <br>
@@ -783,8 +841,13 @@ viewBox="0 0 52.942 42.504"
                 <p class="small_footer_text">Smartoption LTD, Avan District, Tumanyan 13/2-6, +37460465887</p>
             </div>
             <div class="col-sm-4 col-sm-offset-1">
-                <h6 class="footer_title" style="margin-bottom: 17px">Контактная <br>
-                    форма</h6>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h6 class="footer_title" style="margin-bottom: 17px">Контактная
+                                форма</h6>
+                        </div>
+                    </div>
+
                 <form class="form-container" id="subscribe_form"></form>
             </div>
         </div>
@@ -810,12 +873,11 @@ viewBox="0 0 52.942 42.504"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
 <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
         event.preventDefault();
         $(this).ekkoLightbox({
-            alwaysShowClose:true
+            alwaysShowClose: true
         });
     });
 </script>
@@ -823,105 +885,9 @@ viewBox="0 0 52.942 42.504"
 <!--<script src="js/script.min.js"></script>-->
 <script src="js/tweenlite.js"></script>
 <script src="js/graph.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/table.js"></script>
 
-<script>
-
-
-    //    $(document).ready(function(){
-    //        $('.place-card').css('display','none');
-    //    });
-    //    $(document).ready(function() {
-    //        $("a.scrollto").click(function() {
-    //            var elementClick = $(this).attr("href")
-    //            var destination = $(elementClick).offset().top;
-    //            jQuery("html:not(:animated),body:not(:animated)").animate({
-    //                scrollTop: destination
-    //            }, 4000);
-    //            return false;
-    //        });
-    //        $('#toggle').click(function () {
-    //            $('body').toggleClass('backroundMax');
-    //
-    //        })
-    //
-    //    });
-    var tabsFn = (function () {
-
-        function init() {
-            setHeight();
-        }
-
-        function setHeight() {
-            var $tabPane = $('.tab-pane'),
-                tabsHeight = $('.nav-tabs').height();
-        }
-
-        $(init);
-    })();
-
-
-    $(document).ready(function () {
-        $('#toggle-btn').click(function () {
-            $('body').toggleClass('overflow');
-            $('.wrapper_blur').toggleClass('on');
-            $('.header_nav_media').toggleClass('position');
-            $(this).toggleClass('pos');
-
-
-        });
-        if ($(window).width() > '767') {
-            $('.button').click(function () {
-
-                $('.wrapper_blur').toggleClass('on');
-
-                $('.close').click(function () {
-                    $('.wrapper_blur').removeClass('on');
-                });
-
-
-                $(document).ready(function () {
-                    $('.modal').click(function (e) {
-                        $('.wrapper_blur').removeClass('on');
-                    })
-                        .on('click', '.modal-content', function (e) {
-                            e.stopPropagation();
-
-                        });
-
-                });
-                $(document).ready(function () {
-                    $('.text_visibility').click(function () {
-                        $('.form_group--radio').toggleClass('active_label');
-                    });
-                    $('.modal-content').click(function () {
-                        textq = $('input:checked').val();
-                        $('.text_visibility').text(textq);
-
-                    });
-                    $('.form_group--radio-input').click(function () {
-                        if ($('.form_group--radio').hasClass('active_label')) {
-                            $('.form_group--radio').removeClass('active_label');
-                        }
-                    })
-                })
-
-                $('.header_nav_media nav').toggleClass("of")
-            })
-        }
-    })
-    //function windowSize(){
-    //    if ($(window).width() <= '700'){
-    //        $('.close').click(function () {
-    //            if($('.wrapper_blur').hasClass('on')){
-    //                return;
-    //            }else{
-    //                $('.wrapper_blur').addClass('on');
-    //            }
-    //        })
-    //    }
-    //}
-    //$(window).load(windowSize());
-</script>
 
 
 

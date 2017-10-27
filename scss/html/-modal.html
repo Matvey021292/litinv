@@ -10,19 +10,23 @@
                     <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
                     <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
                     <li><a href="training.html">ОБУЧЕНИЕ</a></li>
-                    <li><a href="#">БОНУСЫ И АКЦИИ</a></li>
-                    <li><a href="#">О НАС</a></li>
+                    <li><a href="sale.html">БОНУСЫ И АКЦИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
                     <li class="media_button_come"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a></li>
                     <li class="media_button_open"><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></li>
-
-
                 </ul>
             </nav>
         </div>
     </div>
 </div>
 
-<div id="main-modal" class="modal fade "  tabindex="-1" role="dialog">
+
+
+
+
+
+
+<div id="main-modal" class="modal fade "   tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -33,12 +37,39 @@
             <div class="modal-body">
                 <div class="login-box">
                     <h2>Вход</h2>
-                    <form class="form-container" id="activate_form"></form>
+                    <form class="form_enter" id="form_enter_modal">
+                        <div class="form_group--email"><label>Email<input type="email" data-validation-type="email" name="email" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <div class="form_group--Password"><label>Password<input type="password" data-validation-type="password" name="password" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <a href="#main-modal_password" role="button" class="password_recovery"  data-toggle="modal"  >Забыли пароль?</a>
+                        <div class="form_group--button"> <button class="send-form btn btn-primary " type="submit"><span class="button--inner">Вход</span> </button><span class="link">midbahone.com</span><button type="button" class="btn btn-default close-form" data-dismiss="modal" style="display: none;"> Назад</button> </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div id="main-modal_password" class="modal  modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#main-modal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login-box">
+                    <h2>Забыли пароль?</h2>
+                    <form class="form_enter" id="password_recovery">
+                        <div class="form_group--email"><label>Email<input type="email" data-validation-type="email" name="email" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <div class="form_group--button"> <button class="send-form btn btn-primary " type="submit"><span class="button--inner">Вход</span> </button><span class="link">midbahone.com</span><button type="button" class="btn btn-default close-form" data-dismiss="modal" style="display: none;"> Назад</button> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="main-modal_come" class="modal fade "  tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">

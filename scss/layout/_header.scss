@@ -1,7 +1,7 @@
 body {
   background: $colorbg;
   background-image: url("../img/header.jpg");
-  background-size: 138%;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 
@@ -9,10 +9,13 @@ body {
     overflow: hidden;
   }
 }
-
+a{
+  text-decoration: none;
+}
 .wrapper_blur {
   &.on {
     filter: blur(10px);
+    //background: rgba(0, 0, 0,0.7);
   }
 }
 
@@ -22,7 +25,6 @@ html, body {
 
 .page_section {
   overflow: hidden;
-
   position: relative;
 
 }
@@ -68,7 +70,7 @@ header {
 
   .nav_block {
     display: flex;
-    margin-top: 25px;
+    margin-top: 15px;
 
   }
   .header_nav {
@@ -134,18 +136,23 @@ a.button_registry {
   border-radius: 50px;
 
 }
-
-.header_nav  a {
+a{
   font-size: 13px;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  &:hover{
+    text-decoration: none;
+
+  }
+}
+.header_nav  a {
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
   background-size: 40px 2px;
   background-position: center 30px;
   padding-bottom: 8px;
-  transition: color 1s linear, background-position 0.7s linear;
+  transition: color 0.3s linear, background-position 0.3s linear;
 
   &:hover {
     color: $color;
@@ -347,8 +354,8 @@ window__line {
   }
 
   nav::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, .8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, .1);
   }
 
   nav::-webkit-scrollbar-thumb {
@@ -377,7 +384,7 @@ window__line {
     display: table;
     width: 100%;
     height: calc(100% / 8);
-    background: rgba(0, 0, 0, 1);
+    //background-image: rgba(0, 0, 0, 0.5);
     -webkit-perspective: 0px;
     perspective: 0px;
     -webkit-transform: rotateX(-90deg) scale(0.5);
@@ -464,10 +471,11 @@ window__line {
     -webkit-transform: scale(0.8);
     transform: scale(0.80);
     width: 100%;
-    background: #000;
     z-index: 4343;
     overflow: scroll;
     height: 100%;
+    background-image: url("../img/BackFormRegister.png");
+    background-color: rgba(0,0,0,0.9) ;
 
   }
 
@@ -530,10 +538,14 @@ form.form-container input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  align-items: flex-start;
   p {
-    max-width: 540px;
+
     padding-top: 20px;
     line-height: 1.6;
+  }
+  .header-text{
+    margin: auto;
   }
 
 }
@@ -557,7 +569,7 @@ form.form-container input[type="checkbox"] {
     }
   }
   .table_page_type {
-    border-bottom: 2px solid #1e1e1e;
+
 
     .services_section {
       background-color: transparent;
@@ -593,29 +605,29 @@ form.form-container input[type="checkbox"] {
 }
 
 .padding {
-  padding: 0;
+  padding: 0 !important;
 }
 
-.color_border {
-  border-bottom: 2px solid $color;
-  color: inherit;
-  margin-bottom: 2px;
-  display: inline-block;
-  width: 100%;
-}
+.line_border_bg {
+  background-image: url(../img/line.png);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
-.page_analysis {
-  .title.section_title {
-    font-size: 100px;
-  }
+}
+.title.section_title {
+  font-size: 100px;
+}
+div {
+
   .title_tab {
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 7px;
     color: $color;
-    line-height: 1.5;
+    line-height: 1.2
 
   }
   .badge {
@@ -623,26 +635,21 @@ form.form-container input[type="checkbox"] {
   }
 
   .tabs-left {
-    margin-top: 3rem;
     position: relative
   }
-  .tabs_nav_panel {
-    width: 15%;
-  }
+
   .tabs_content {
-    width: 70%;
+
     transition: all 1s linear;
   }
   .nav-tabs {
     border-bottom: 0;
-    left: -20%;
-    top: 0;
     padding: 10px 20px;
 
     li {
       float: none;
       margin: 0;
-      padding-right: 25px;
+
 
       a {
         margin-right: 0;
@@ -653,10 +660,10 @@ form.form-container input[type="checkbox"] {
         padding-right: 0;
         transition: all 1s linear;
         font-size: 15px;
-        font-weight: 900;
+        font-weight: 400;
         line-height: 1;
         color: #474747;
-        text-transform: uppercase;
+
         line-height: 1.2;
 
         &:hover {
@@ -830,6 +837,10 @@ line-height: 0.5;
   background: #28292a;
   padding: 12px;
   padding-bottom: 17px;
+  &:hover{
+    background-color:#eb314f ;
+    opacity: 1;
+  }
 }
 .modal-content h2{
   font-size: 30px;
@@ -838,7 +849,7 @@ line-height: 0.5;
 }
 
 .modal-open .modal {
-  background: rgba(0, 0, 0,0.7);
+  background-color: rgba(0,0,0,0.9);
   z-index: 9999;
 
 }
@@ -871,20 +882,20 @@ line-height: 0.5;
     text-align: center;
     font-size: 2em;
   }
-  #activate_form label input {
+  #form_enter_modal label input {
     border-bottom: 2px solid #1a1b1c;
   }
-  form#activate_form .valid,
-  form#activate_form .invalid {
+  form#form_enter_modal .valid,
+  form#form_enter_modal .invalid {
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid #eb314f;
 
   }
-  form#activate_form input:focus {
+  form#form_enter_modal input:focus {
     border-color: transparent;
   }
-  form#activate_form .valid {
+  form#form_enter_modal .valid {
     color: #03ac76;
     font-weight: bold;
     background-image: url("../img/checked.png");
@@ -893,10 +904,10 @@ line-height: 0.5;
     background-size: contain;
     border-bottom: 2px solid #03ac76;
   }
-  form#activate_form .form_group--button .link {
+  form#form_enter_modal .form_group--button .link {
     display: none;
   }
-  #activate_form .send-form {
+  #form_enter_modal .send-form {
     width: 100%;
     max-width: 170px;
     transition: all 0.3s linear;
@@ -916,7 +927,7 @@ line-height: 0.5;
   margin-top: 15px;
 }
 
-
+#password_recovery .checkbox-wrapper label,
 #register_form .checkbox-wrapper label {
   height: 100%;
   vertical-align: text-top;
@@ -924,8 +935,10 @@ line-height: 0.5;
   font-weight: 500;
   color: #fff !important;
   letter-spacing: normal;
+
   a{
     text-decoration: solid;
+    color: $color;
   }
 
 }
@@ -934,7 +947,12 @@ line-height: 0.5;
   box-shadow: none;
   border: 0;
 }
+#password_recovery{
+  input{
+    width: 100%;
 
+  }
+}
 #register_form {
   .text_visibility {
     border-bottom: 2px solid #474747;
@@ -1037,9 +1055,11 @@ form.form-container input[type="radio"] label{
   font-size: 15px;
 
 }
-#activate_form label, #register_form label, #subscribe_form label{
+#password_recovery label,
+#form_enter_modal label, #register_form label, #subscribe_form label{
   font-size: 10px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 
 }
 .text_modal_bottom{
@@ -1049,6 +1069,8 @@ form.form-container input[type="radio"] label{
   color: #ccc;
   text-align: center;
   display: inline-block;
+  margin: 10px 0;
+  text-align: left;
 }
 
 
@@ -1109,26 +1131,20 @@ form.form-container input[type="radio"] label{
     text-decoration: none;
     display: inline-block;
     span{
-      background: #fff;
+      background: rgba(255,255,255,0.5);
       width: 20px;
       height: 20px;
       padding: 0;
       font-size: 0px;
       display: inline-block;
-      margin: 10px;
+      margin: 10px 5px 0 5px;
       border-radius:50%;
       color: #000;
       position: relative;
-      &:after{
-        content: "";
-        position: absolute;
-        width: 70%;
-        height: 70%;
-        background: $color;
-        border-radius: 50%;
-        top:2px;
-        left: 2px;
+      &:active{
+        background:$color;
       }
+
 
     }
     &:first-child{
@@ -1138,5 +1154,66 @@ form.form-container input[type="radio"] label{
       text-align: left;
     }
   }
+
+}
+.password_recovery {
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+    text-transform: none;
+  text-align: center;
+  margin: 10px 0;
+  &:first-letter{
+   text-transform: uppercase;
+  }
+
+}
+
+
+//salePage
+.sale_section{
+  margin-top: 40;
+ .sale_list{
+   background-image: url("../img/back-bonus.jpg");
+   background-size: cover;
+   background-position: center;
+   background-color: rgba(26, 26, 26, 0.57);
+   margin: 20px 0;
+   padding: 50px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-blend-mode: darken;
+   filter: blur(1px);
+   transition: all 1s linear;
+   &:hover{
+     filter:blur(0);
+     background-color:transparent;
+   }
+ }
+  a.button_registry{
+    padding: 12px;
+    width: 200px;
+    font-weight: 400;
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+  }
+  .title_sale_section{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+  .text_sale_section{
+    font-weight: lighter;
+    font-size: 12pt;
+    line-height: 20px;
+    text-align: center;
+  }
+
 
 }

@@ -59,12 +59,14 @@
 img[src="img/mastercard.svg"]{
   max-width: 80px;
 }
+#password_recovery,
 #register_form,
-#activate_form,
+#form_enter_modal,
 #subscribe_form{
   text-align: left;
   max-width: 400px;
   margin: auto;
+
 
   label{
     width: 100%;
@@ -81,6 +83,8 @@ img[src="img/mastercard.svg"]{
       color: #fff;
       font-weight: 500;
       font-size: 17px;
+      width: 100%;
+      outline: none;
 
 
     }
@@ -88,6 +92,8 @@ img[src="img/mastercard.svg"]{
   }
 
 }
+
+#main-modal_password  .modal-sm,
 #main-modal .modal-sm,
 #main-modal_come .modal-sm{
   width: 40%;
@@ -95,6 +101,7 @@ img[src="img/mastercard.svg"]{
   height: auto;
 
 }
+#main-modal_password .modal-content,
 #main-modal .modal-content,
 #main-modal_come .modal-content{
   background-color: rgba(255,255,255,0.03);
@@ -106,22 +113,42 @@ img[src="img/mastercard.svg"]{
 #register_form label{
   text-transform: uppercase;
 }
+
 #register_form{
   margin: auto;
   min-width: 300px;
 }
+.form_enter .invalid + .error,
 .form-container .invalid + .error{
   color: #eb314f!important;
   font-size: 10px !important;
   text-transform: lowercase;
+  margin-top: 5px;
+
 }
+#password_recovery label input,
 #register_form label input{
   border-bottom: 2px solid #303031;
   font-weight: 300;
 }
-
+#password_recovery .link,
 #register_form .link{
   display: none;
+}
+#password_recovery .checkbox-wrapper{
+  &:first-child{
+    margin-top: 40px;
+  }
+  label{
+    display: inline;
+    font-size: 10px;
+    font-style: italic;
+    text-transform: none;
+    a{
+      font-size: 1em;
+
+    }
+  }
 }
 #register_form .checkbox-wrapper{
   &:first-child{
@@ -138,6 +165,12 @@ img[src="img/mastercard.svg"]{
     }
   }
 }
+#password_recovery{
+  .send-form{
+    margin: 10px auto;
+
+  }
+}
 #register_form{
   .send-form{
     margin: 10px auto;
@@ -146,9 +179,9 @@ img[src="img/mastercard.svg"]{
 }
 
 
-
+#password_recovery.form_enter .invalid,
 #register_form.form-container .invalid,
-#activate_form.form-container .invalid,
+#form_enter_modal.form_enter .invalid,
 #subscribe_form.form-container .invalid{
   color: #eb314f ;
   border-bottom: 2px solid #eb314f;
@@ -157,6 +190,7 @@ img[src="img/mastercard.svg"]{
   background-position: right;
   padding: 7px 0;
 }
+#password_recovery.form_enter .valid,
 #register_form.form-container .valid,
 #subscribe_form.form-container .valid{
   color: #03ac76 !important;
@@ -213,5 +247,8 @@ a.button{
 .header_logo a.button_come:hover{
   background: transparent;
   border: 2px solid $color;
+}
+.map_container{
+  display: flex;
 }
 
