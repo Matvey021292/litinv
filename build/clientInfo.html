@@ -16,32 +16,49 @@
    <link rel="stylesheet" type="text/css" href="css/style.css" />
    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+   <link rel="stylesheet" type="text/css" href="css/menu.css" />
 
 </head>
 
 <body style="min-width: 320px" onload="init()">
 
 
-    <div class="container">
-    <div class="row">
-        <div class="header_nav_media">
-            <input type="checkbox" id="toggle"/>
-            <label for="toggle" id="toggle-btn"></label>
-            <div class="nav-icon"></div>
-            <nav data-state="close">
-                <ul>
-                    <li><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li><a href="indexType.html">ТИПЫ СЧЕТОВ</a></li>
-                    <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
-                    <li><a href="training.html">ОБУЧЕНИЕ</a></li>
-                    <li><a href="sale.html">БОНУСЫ И АКЦИИ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                    <li class="media_button_come"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a></li>
-                    <li class="media_button_open"><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></li>
-                </ul>
+    
+ <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="filters hidden">
+        <defs>
+            <filter id="blur" x="-20%" y="0" width="140%" height="100%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
+            </filter>
+        </defs>
+    </svg>
+<div class="mobileMain">
+    <div class="menu">
+            <div class="menu-bg js-blur"></div>
+            <nav class="menu-items">
+                <a href="index.html" class="menu-item">
+                    <span class="js-blur">ГЛАВНАЯ</span>
+                </a>
+                <a href="indexType.html" class="menu-item">
+                    <span class="js-blur">ТИПЫ СЧЕТОВ</span>
+                </a>
+                <a href="analysisIndex.html" class="menu-item">
+                    <span class="js-blur">АНАЛИЗ РЫНКА</span>
+                </a>
+                <a href="training.html" class="menu-item">
+                    <span class="js-blur">ОБУЧЕНИЕ</span>
+                </a>
+                <a href="sale.html" class="menu-item">
+                    <span class="js-blur">БОНУСЫ И АКЦИИ</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="js-blur">КОНТАКТЫ</span>
+                </a>
+                
+                    <a href="#" class=" menu-item" data-toggle="modal" data-target="#main-modal">  <span class="js-blur">ВОЙТИ</span></a>
+                    <a href="#" class=" menu-item" data-toggle="modal" data-target="#main-modal_come">  <span class="js-blur">ОТКРЫТЬ СЧЕТ</span></a>
+                </a>
             </nav>
         </div>
-    </div>
 </div>
 
 
@@ -50,21 +67,23 @@
 
 
 
-<div id="main-modal" class="modal fade "   tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-    <div class="modal-dialog modal-sm" role="document">
+
+<div id="main-modal" class="modal  modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+    <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="login-box">
                     <h2>Вход</h2>
                     <form class="form_enter" id="form_enter_modal">
-                        <div class="form_group--email"><label>Email<input type="email" data-validation-type="email" name="email" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
+                        <div class="form_group--email"><label>Email<input type="email" data-validation-type="email" name="email" placeholder="" required="" > <div class="error"></div></label></div>
                         <div class="form_group--Password"><label>Password<input type="password" data-validation-type="password" name="password" placeholder="" required="" class="invalid"> <div class="error">- поле должно содержать правильный email-адрес</div></label></div>
-                        <a href="#main-modal_password" role="button" class="password_recovery"  data-toggle="modal"  >Забыли пароль?</a>
+                        <a href="#main-modal_password" data-dismiss="modal" role="button" class="password_recovery"  data-toggle="modal"  >Забыли пароль?</a>
                         <div class="form_group--button"> <button class="send-form btn btn-primary " type="submit"><span class="button--inner">Вход</span> </button><span class="link">midbahone.com</span><button type="button" class="btn btn-default close-form" data-dismiss="modal" style="display: none;"> Назад</button> </div>
                     </form>
                 </div>
@@ -73,7 +92,11 @@
     </div>
 </div>
 
-<div id="main-modal_password" class="modal  modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#main-modal">
+
+
+
+
+<div id="main-modal_password" class="modal fade modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#main-modal">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -112,10 +135,10 @@
         </div>
     </div>
 </div>
-<div class="wrapper_blur">
 
 
 
+  <div class=" background-container">
 <header >
     
 <div class="container-fluid ">
@@ -124,6 +147,7 @@
         <div class="  flex-button media_nav_table"><a href="#" class="button button_come " data-toggle="modal" data-target="#main-modal">ВОЙТИ</a><a href="#" class="button button_open" data-toggle="modal" data-target="#main-modal_come">ОТКРЫТЬ СЧЕТ</a></div>
         <div class="border"></div>
     </div>
+    <button class="menu-toggle"><span>Open Menu</span></button>
     <div class="row media_nav_table">
         <div class="bgfixed"></div>
         <div class="col-sm-6 col-sm-offset-6 nav_block">
@@ -133,7 +157,7 @@
                 <li><a href="analysisIndex.html">АНАЛИЗ РЫНКА</a></li>
                 <li><a href="training.html">ОБУЧЕНИЕ</a></li>
                 <li><a href="sale.html">БОНУСЫ И АКЦИИ</a></li>
-                <li><a href="#subscribe_form">КОНТАКТЫ</a></li>
+                <li><a class="contact" href="#subscribe_form">КОНТАКТЫ</a></li>
             </ul>
             <ul class="languagepicker">
                 <a href="#nl"><li><img src="img/russia.png"/></li></a>
@@ -302,6 +326,9 @@
 <script src="js/graph.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/table.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/motionblur.js"></script>
+<script src="js/menu.js"></script>
 
 
 

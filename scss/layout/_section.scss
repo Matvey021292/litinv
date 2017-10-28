@@ -351,12 +351,11 @@ h6.title.section_title{
   background-size: cover;
   text-align: left;
   min-height: 660px;
-  display: flex;
-  justify-content: center;
-  padding-left: 15%;
-  flex-direction: column;
-
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   background-position: 50% 100%;
+  align-items:flex-start;
 
 }
 .page-article-title {
